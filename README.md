@@ -1,11 +1,11 @@
-About r-opennlp
-===============
+About r-opennlp-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-opennlp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=openNLP
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-opennlp-feedstock/blob/main/LICENSE.txt)
 
 Summary: An interface to the Apache OpenNLP tools (version 1.5.3). The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text written in Java. It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution. See <https://opennlp.apache.org/> for more information.
 
