@@ -1,18 +1,18 @@
-{% set version = '0.2-7' %}
+{% set version = "0.2-8" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-opennlp
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace('-', '_') }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/openNLP_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/openNLP/openNLP_{{ version }}.tar.gz
-  sha256: 65bc97c41ec26c178aa10adb774e12868daaee9cb4077b39172d70b33939d497
+  sha256: cdd94578855bff77b03c33934e4e14b98ea43a7412de078111e491807fe5d5f1
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,11 +40,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=openNLP
   license: GPL-3.0-only
-  summary: An interface to the Apache OpenNLP tools (version 1.5.3). The Apache OpenNLP library
-    is a machine learning based toolkit for the processing of natural language text
-    written in Java. It supports the most common NLP tasks, such as tokenization, sentence
-    segmentation, part-of-speech tagging, named entity extraction, chunking, parsing,
-    and coreference resolution. See <https://opennlp.apache.org/> for more information.
+  summary: An interface to the Apache OpenNLP tools (version 1.5.3). The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text written in Java. It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity 
+    extraction, chunking, parsing, and coreference resolution. See <https://opennlp.apache.org/> for more information.
   license_family: GPL3
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
